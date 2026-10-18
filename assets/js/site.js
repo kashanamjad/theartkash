@@ -38,11 +38,36 @@
 
   /* ---------- Contact ---------- */
   const k = C.contact, wa = (k.whatsapp || "").replace(/[^\d]/g, "");
+  const subj = encodeURIComponent("New shoot enquiry");
   $("#ways").innerHTML = [
-    k.email && `<a href="mailto:${esc(k.email)}?subject=${encodeURIComponent("New shoot enquiry")}">Email ↗</a>`,
+    k.email && `<span class="mailwrap"><a href="mailto:${esc(k.email)}?subject=${subj}" id="mail-link">Email ↗</a>
+      <span class="mailmenu" id="mail-menu" role="menu">
+        <a role="menuitem" href="https://mail.google.com/mail/?view=cm&fs=1&to=${esc(k.email)}&su=${subj}">Gmail</a>
+        <a role="menuitem" href="https://outlook.office.com/mail/deeplink/compose?to=${esc(k.email)}&subject=${subj}">Outlook</a>
+        <a role="menuitem" href="mailto:${esc(k.email)}?subject=${subj}" data-local>Mail app</a>
+        <button role="menuitem" type="button" id="mail-copy">Copy ${esc(k.email)}</button>
+      </span></span>`,
     wa && `<a href="https://wa.me/${wa}?text=${encodeURIComponent(k.whatsapp_message || "")}">WhatsApp ↗</a>`,
     k.instagram && `<a href="${esc(k.instagram)}">Instagram ↗</a>`,
   ].filter(Boolean).join("");
+
+
+  /* Email: computers often have no mail app set up, so clicking Email opens a small menu instead */
+  const mailLink = $("#mail-link"), mailMenu = $("#mail-menu");
+  if (mailLink) {
+    mailLink.addEventListener("click", (e) => {
+      if (!canHover()) return;            // phones: open the mail app directly
+      e.preventDefault(); mailMenu.classList.toggle("open");
+    });
+    addEventListener("click", (e) => { if (!e.target.closest(".mailwrap")) mailMenu.classList.remove("open"); });
+    $("#mail-copy").addEventListener("click", async () => {
+      const b = $("#mail-copy");
+      try { await navigator.clipboard.writeText(k.email); b.textContent = "Copied ✓"; }
+      catch { b.textContent = k.email; }
+      setTimeout(() => { b.textContent = "Copy " + k.email; mailMenu.classList.remove("open"); }, 1400);
+    });
+    $$("a", mailMenu).forEach((a) => a.addEventListener("click", () => setTimeout(() => mailMenu.classList.remove("open"), 100)));
+  }
 
   /* ---------- Hero: floating photos ----------
      Each spot: x,y = % of the screen, w = width in px, d = depth (0 near/sharp → 1 far/blurred), ar = height/width.
