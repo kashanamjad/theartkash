@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "headline": "Got something to",
+    "headline_brush": "shoot?",
+    "button": "What we do",
+    "photos": [
+      "/assets/media/hero/fitout-lounge.jpg",
+      "/assets/media/hero/porsche-orange.jpg",
+      "/assets/media/hero/bts-at-camera.jpg",
+      "/assets/media/hero/carlton-lounge.jpg",
+      "/assets/media/hero/arabica-portrait.jpg",
+      "/assets/media/hero/bts-gimbal-office.jpg",
+      "/assets/media/hero/bts-on-set.jpg",
+      "/assets/media/hero/sarabeths-chef.jpg",
+      "/assets/media/hero/capehayat-living.jpg",
+      "/assets/media/hero/bts-gimbal.jpg",
+      "/assets/media/hero/bts-interview-set.jpg",
+      "/assets/media/hero/carlton-tree.jpg",
+      "/assets/media/hero/bts-interview-rig.jpg",
+      "/assets/media/hero/bts-atrium.jpg",
+      "/assets/media/hero/bts-kit.jpg",
+      "/assets/media/hero/bts-wide-set.jpg",
+      "/assets/media/hero/bts-booth.jpg"
+    ]
+  },
+  "services": [
+    { "icon": "film", "title": "Brand & commercial films", "text": "Ads, brand stories and product films" },
+    { "icon": "event", "title": "Event coverage", "text": "Launches, car events and corporate days" },
+    { "icon": "camera", "title": "Photography", "text": "Interiors, food, automotive, people" },
+    { "icon": "social", "title": "Social content", "text": "Reels and short vertical edits" },
+    { "icon": "post", "title": "Post-production", "text": "Editing, colour and motion" }
+  ],
+  "films": [
+    { "client": "The Fitout", "title": "Cape Hayat penthouse", "video": "/assets/media/films/the-fitout--cape-hayat-penthouse.mp4", "poster": "/assets/media/films/the-fitout--cape-hayat-penthouse.jpg", "shape": "horizontal" },
+    { "client": "The Fitout", "title": "Carlton Hotel lobby", "video": "/assets/media/films/the-fitout--carlton-hotel.mp4", "poster": "/assets/media/films/the-fitout--carlton-hotel.jpg", "shape": "horizontal" },
+    { "client": "The Fitout", "title": "ORA walk-in", "video": "/assets/media/films/the-fitout--ora-walk-in.mp4", "poster": "/assets/media/films/the-fitout--ora-walk-in.jpg", "shape": "horizontal" },
+    { "client": "The Fitout", "title": "Cape Hayat apartments", "video": "/assets/media/films/the-fitout--apartments-walkthrough.mp4", "poster": "/assets/media/films/the-fitout--apartments-walkthrough.jpg", "shape": "horizontal" },
+    { "client": "The Fitout", "title": "Cape Hayat penthouse reel", "video": "/assets/media/films/the-fitout--penthouse-reel-2.mp4", "poster": "/assets/media/films/the-fitout--penthouse-reel-2.jpg", "shape": "vertical" },
+    { "client": "The Fitout", "title": "Carlton Hotel reel", "video": "/assets/media/films/the-fitout--carlton-reel.mp4", "poster": "/assets/media/films/the-fitout--carlton-reel.jpg", "shape": "vertical" },
+    { "client": "The Fitout", "title": "ORA stop-motion reel", "video": "/assets/media/films/the-fitout--ora-stopmotion.mp4", "poster": "/assets/media/films/the-fitout--ora-stopmotion.jpg", "shape": "vertical" },
+    { "client": "The Fitout", "title": "Cape Hayat penthouse reel 2", "video": "/assets/media/films/the-fitout--penthouse-reel-1.mp4", "poster": "/assets/media/films/the-fitout--penthouse-reel-1.jpg", "shape": "vertical" },
+    { "client": "The Fitout", "title": "Cape Hayat apartment reel", "video": "/assets/media/films/the-fitout--apartment-reel.mp4", "poster": "/assets/media/films/the-fitout--apartment-reel.jpg", "shape": "vertical" },
+    { "client": "The Car Lab", "title": "Brand film", "video": "/assets/media/films/the-car-lab--brand-film.mp4", "poster": "/assets/media/films/the-car-lab--brand-film.jpg", "shape": "vertical" },
+    { "client": "Icons of the Porsche", "title": "Event film", "video": "/assets/media/films/icons-of-the-porsche--highlights.mp4", "poster": "/assets/media/films/icons-of-the-porsche--highlights.jpg", "shape": "vertical" }
+  ],
+  "photos": [
+    { "client": "The Fitout", "title": "Interiors", "image": "/assets/media/photos/the-fitout_04.jpg" },
+    { "client": "Icons of the Porsche", "title": "Event", "image": "/assets/media/photos/icons-of-the-porsche_02.jpg" },
+    { "client": "The Fitout", "title": "Interiors", "image": "/assets/media/photos/the-fitout_08.jpg" },
+    { "client": "The Fitout", "title": "Cape Hayat", "image": "/assets/media/photos/the-fitout_01.jpg" },
+    { "client": "The Car Lab", "title": "Brand film still", "image": "/assets/media/photos/the-car-lab_05.jpg" },
+    { "client": "The Fitout", "title": "Interiors", "image": "/assets/media/photos/the-fitout_20.jpg" },
+    { "client": "The Fitout", "title": "Details", "image": "/assets/media/photos/the-fitout_17.jpg" },
+    { "client": "The Fitout", "title": "Interiors", "image": "/assets/media/photos/the-fitout_07.jpg" }
+  ],
+  "more_work": { "label": "See more work", "url": "https://kashanamjad.com" },
+  "team": [
+    { "name": "Kashan Amjad", "role": "Co-Founder · Director", "photo": "/assets/media/team/kashan.png", "link": "https://kashanamjad.com" },
+    { "name": "Mavia Nadeem", "role": "Co-Founder · Operations & Communication", "photo": "/assets/media/team/mavia.png", "link": "" },
+    { "name": "Khadija Kamili", "role": "Digital Marketing", "photo": "", "link": "" }
+  ],
+  "contact": {
+    "headline": "Have a shoot coming up?",
+    "text": "Tell us what you're planning. We'll get back to you within a day.",
+    "email": "hello@theartkash.com",
+    "whatsapp": "+971 50 544 1914",
+    "whatsapp_message": "Hi ArtKash, I have a shoot coming up.",
+    "instagram": "https://www.instagram.com/theartkash/"
+  },
+  "footer": "Dubai, UAE · © 2026 The Artkash"
+}
